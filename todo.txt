@@ -37,42 +37,6 @@ Search page:
 
 Retailers page
 
-
-
-
-
-
-
-
-General:
-- Font
-- Color scheme
-
-Landing page:
-- Menu items text color
-- Hover + active colors
-- Menu items links
-- Sign up button design
-- Search bar design
-- On hover per product
-
-- Popular products?
-- Daily deals?
-- Relevant items according to season
-- Shopping inspiration (list the blogs)
-- Labels and certifications 
-- Section for personalized suggestions (require user sign in? or just cookies; something like: items based on your searches)
-
-Search page
-
-Product page
-
-Categories page
-
-Blog page for guides
-
-Labels and certifications
-
 Nice to haves:
 Hashtags
 Recipes

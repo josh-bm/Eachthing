@@ -1,70 +1,38 @@
 <script setup>
 const articles = [
   {
-    title: "Boost your conversion rate",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-  },
-];
+    title: "Spaghetti Scrubs",
+    description:"The Spaghetti Scrub cookware scrubbers work astonishingly well, and are much less wasteful than having to throw away a cheap plastic scrubbing wand every few weeks. It's comprised of cotton strips and pulverized, dried corn cobs, giving its noodle-like strands a coarse — but not too rough — texture.",
+    imageUrl:"/scrubs.jpg",
+    },
 
-const posts = [
-  {
-    title: "Boost your conversion rate",
-    href: "#",
-    category: { name: "Article", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "6 min",
-    author: {
-      name: "Roel Aufderehar",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      {
+    title: "Silicone Stretch Lids",
+    description:"Instead of awkwardly covering opened, half-used cans of ingredients, bowls of leftovers, and cut fruit with plastic wrap, these stretchy silicone lids will help make everything look a lot more appetizing.",
+    imageUrl:"/lids.jpg",
     },
-  },
-  {
-    title: "How to use search engine optimization to drive sales",
-    href: "#",
-    category: { name: "Video", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    date: "Mar 10, 2020",
-    datetime: "2020-03-10",
-    imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "4 min",
-    author: {
-      name: "Brenna Goyette",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+
+    
+      {
+    title: "Clean Essentials Kit",
+    description:"Since most cleaning products are comprised mostly of water, it seems silly to pay extra for something that comes out of your faucet. That's just one of the many reasons we love Blueland.",
+    imageUrl:"/kit.jpg",
     },
-  },
-  {
-    title: "Improve your customer experience",
-    href: "#",
-    category: { name: "Case Study", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    date: "Feb 12, 2020",
-    datetime: "2020-02-12",
-    imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "11 min",
-    author: {
-      name: "Daniela Metz",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+
+    
+      {
+    title: "Dish Washing Block Soap",
+    description:"Bar soap is nothing new, but this might be the first dishwashing bar soap we've ever come across. Wet the No Tox Life Vegan Dish Block onto your sponge, and then work it up into a lather to scrub down your dishes, silverware, glasses, and pots as you would normally. It provides the same fresh clean without the plastic packaging or mystery ingredients.",
+    imageUrl:"/soap.jpg",
     },
-  },
-];
+
+    
+      {
+    title: "Silicone Reusable Food Storage Bag",
+    description:"Your plastic food-storage bag use stops here. Available in a variety of sizes, these silicone Stasher bags are great for packing up sandwiches and snacks on the go.",
+    imageUrl:"/bag.jpg",
+    },
+    ]
 </script>
 
 <template>
@@ -85,23 +53,34 @@ const posts = [
 
       <section class="w-2/3 mx-auto space-y-5">
         <figure class="">
-          <img class="w-full" src="/blog.jpeg" alt="" />
+          <img class="w-full" src="/ecofriendly.jpg" alt="" />
         </figure>
-        <h3 class="font-bold text-xl mb-3">Lorem ipsum dolor sit amet.</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-          doloremque!
+        It's no exaggeration to say that our single-use plastic consumption has gotten out of control. According to the EPA, in 2018, 27 million tons of plastic were landfilled, while only 3 million tons were recycled. And this does not account for the staggering amounts of unprocessed litter on land and in our waterways and oceans.
+        </p>
+        <p>
+          It's difficult to grapple with one's own impact on the environment. Although small changes can seem futile in the face of the millions of tons of single-use plastic thrown away each year, change has to start on an individual level. Thinking about the disposable products that we use in our everyday lives can help us make better choices as consumers.
+        </p>
+        <p>
+          The 5 eco-friendly products in this guide can help you replace throwaway items that would otherwise remain buried on our planet for hundreds of years ... if not longer. Our team has also been able to test and live with a significant number of these products to evaluate their ease of use for months (or even years), and we've denoted our favorite eco-friendly standouts below.
+        </p>
+        <p>
+          Buying smarter is by no means the only way to make a difference, but it's a good first step to take. Plus, who knows? Becoming more aware of your single-use waste today could help you plan everything from your meals to your travel more intentionally in the future. These are the best eco-friendly products if you're ready to start making the switch.
         </p>
       </section>
 
-      <section class="w-2/3 mx-auto space-y-5"  v-for="article in articles" :key="article.name">
-        <figure class="">
-          <img class="w-full" src="/blog.jpeg" alt="" />
-        </figure>
-        <h3 class="font-bold text-xl mb-3">{{ article.title }}</h3>
+      <section class="w-2/3 mx-auto space-y-5 mt-5"  v-for="article in articles" :key="article.name">
+        <nuxt-link to="/product">
+        <figure class="flex">
+          <img class="w-4/12" :src="article.imageUrl" alt="" />
+          <div class="px-5">
+             <h3 class="font-bold text-xl mb-3">{{ article.title }}</h3>
         <p>
           {{ article.description }}
         </p>
+          </div>
+        </figure>
+       </nuxt-link>
       </section>
 
 

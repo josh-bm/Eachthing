@@ -1,35 +1,34 @@
 <script setup>
 const features = [
   {
-    title: "Boost your conversion rate",
+    title: "5 Eco-friendly products to help you live a little greener",
     href: "#",
     category: { name: "Article", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
+    description:"Only a small percentage of our planet’s plastics are actually recycled. Buying less single-use plastic can help reduce the waste.",
+   date: "May 12, 2022",
     datetime: "2020-03-16",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      "/ecofriendly.jpg",
     readingTime: "6 min",
     author: {
-      name: "Roel Aufderehar",
+      name: "Michelle Yeoh",
       href: "#",
       imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "/author.jpg",
     },
   },
 ];
 const posts = [
   {
-    title: "Boost your conversion rate",
+ title: "5 Ethical And Sustainable Clothing Brands Betting Against Fast Fashion",
     href: "#",
     category: { name: "Article", href: "#" },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
+       "As consumers, we’ve become increasingly conscious about our purchases, channeling the power of our vocalized objections to make a positive difference for the people involved in the making of our clothes and goods.",
+       date: "Mar 16, 2022",
     datetime: "2020-03-16",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      "/sustainablefashion.jpg",
     readingTime: "6 min",
     author: {
       name: "Roel Aufderehar",
@@ -39,15 +38,14 @@ const posts = [
     },
   },
   {
-    title: "How to use search engine optimization to drive sales",
+    title: "48 Eco Friendly Products You Can Buy Today to Help Stop Plastic Pollution",
     href: "#",
     category: { name: "Video", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    date: "Mar 10, 2020",
+    description:"We put together this list of eco friendly products to show you just how easy it can be to replace some of the plastic products you buy and support those making products out of recycled plastic. By replacing them, you can virtually eliminate your single use plastic waste in that area. By purchasing recycled plastic products you are helping to close the loop of the circular economy.",
+      date: "Mar 10, 2020",
     datetime: "2020-03-10",
     imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      "/trees.jpg",
     readingTime: "4 min",
     author: {
       name: "Brenna Goyette",
@@ -57,15 +55,14 @@ const posts = [
     },
   },
   {
-    title: "Improve your customer experience",
+    title: "Game-Changing Sustainable Brands",
     href: "#",
     category: { name: "Case Study", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    date: "Feb 12, 2020",
+    description:"The fifty sustainable brands we include on the Lazy E List are a cut above. They elevate design and sustainability. They effortlessly enable us to align our lifestyles with our values about the environment and society. Their sustainable products don’t just fit our lives; they change them for the better.",
+       date: "Feb 12, 2020",
     datetime: "2020-02-12",
     imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      "/blog3.webp",
     readingTime: "11 min",
     author: {
       name: "Daniela Metz",
@@ -83,6 +80,7 @@ const posts = [
 
     <div class="relative mx-auto w-10/12 p-5">
       <div class="w-full">
+        <nuxt-link to="/blogs/blog1">
         <div
           v-for="feature in features"
           :key="feature.name"
@@ -118,6 +116,7 @@ const posts = [
             </div>
           </div>
         </div>
+        </nuxt-link>
       </div>
 
       <div class="mt-12 mx-auto grid gap-10 grid-cols-3">
