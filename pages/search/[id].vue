@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import {onMounted, ref} from "vue"
 const route = useRoute();
 
@@ -31,4 +31,4 @@ console.log('route',route.params.id)
       </div>
     </div>
   </div>
-</template>
+</template> -->
