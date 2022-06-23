@@ -1,0 +1,43 @@
+Meta tags
+Upload to domain
+
+
+Home page:
+- Make eco score, price, and tags unique for all products
+
+Product page:
+- Make unique reviews
+
+Searchbar:
+- make it so that it searches on enter key and not on click
+
+Category search page:
+- Add unique filters related to the products
+
+Missing pages:
+Labels and certifications + nice to haves
+
+Retailers page
+
+About page
+
+Nice to haves:
+Hashtags
+Recipes
+
+Search page:
+- Page for no search results (tailwindui)
+- Search page filter in mobile
+	- Make it onclick dropdown
+
+Price tracking function
+
+- Add alt tags for all images
+- Consider Aria and other stuff
+
+Product page
+- Write a review modal
+
+
+Sign up + login
+- make a signup page
