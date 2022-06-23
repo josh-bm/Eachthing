@@ -206,9 +206,10 @@ const blogs = [
 <template>
   <div>
  <HomeNav/>
-    
+        
+    <!-- Search bar -->
     <div
-      class="w-full py-48 mb-5 bg-no-repeat bg-right bg-cover bg-[url('/banner.jpg')]"
+      class="w-full py-48 mb-5 bg-no-repeat bg-left lg:bg-right bg-cover bg-[url('/banner.jpg')]"
     >
       <div class="w-10/12 mx-auto space-y-3 mb-4">
         <h2 class="text-2xl font-semibold">
@@ -223,7 +224,7 @@ const blogs = [
 
       <div class="w-10/12 mx-auto">
         
-        <div class="w-4/12">
+        <div class="lg:w-4/12">
           <Searchbar />
         </div>
       </div>
@@ -233,7 +234,7 @@ const blogs = [
 
     <div class="w-10/12 py-5 mx-auto">
       <h2 class="font-semibold text-2xl mb-4">Based on your recent searches</h2>
-      <div class="grid grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
         <div v-for="recentproduct in recentproducts" :key="recentproduct.name">
           <div
             class="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl border bg-white"
@@ -312,7 +313,7 @@ const blogs = [
     <!-- Popular products section -->
     <div class="w-10/12 py-5 mx-auto">
       <h2 class="font-semibold text-2xl mb-4">Popular products</h2>
-      <div class="grid grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
         <div
           v-for="popularproduct in popularproducts"
           :key="popularproduct.name"
@@ -394,14 +395,14 @@ const blogs = [
     <!-- Blogs section -->
     <div class="w-10/12 py-5 mx-auto grid grid-cols-1 gap-8">
       <h2 class="font-semibold text-2xl mb-2">Need inspiration?</h2>
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div
           v-for="blog in blogs"
           :key="blog.name"
-          class="rounded-lg shadow-lg max-w-full flex cursor-pointer hover:shadow-xl"
+          class="rounded-lg shadow-lg max-w-full lg:flex cursor-pointer hover:shadow-xl"
         >
           <div
-            class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-l-lg text-center overflow-hidden"
+            class="h-48 w-full lg:w-48 flex-none bg-cover rounded-l-lg text-center overflow-hidden"
             :title="blog.imageAlt"
             :style="{ 'background-image': blog.imageUrl }"
           ></div>
@@ -436,7 +437,7 @@ const blogs = [
     <!-- Seasonal section -->
     <div class="w-10/12 py-5 mx-auto">
       <h2 class="font-semibold text-2xl mb-4">Summer fashion</h2>
-      <div class="grid grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
         <div
           v-for="seasonalproduct in seasonalproducts"
           :key="seasonalproduct.name"

@@ -72,7 +72,7 @@ const reviews = {
       id: 1,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>This is the best bodywash I have ever tried.</p>
       `,
       author: "Emily Selman",
       avatarSrc:
@@ -82,7 +82,7 @@ const reviews = {
       id: 2,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>This is the best bodywash I have ever tried.</p>
       `,
       author: "Emily Selman",
       avatarSrc:
@@ -93,7 +93,7 @@ const reviews = {
       id: 3,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>This is the best bodywash I have ever tried.</p>
       `,
       author: "Emily Selman",
       avatarSrc:
@@ -184,7 +184,7 @@ const webshops = [
         </ol>
       </nav>
       <!-- Product start -->
-      <div class="flex">
+      <div class="lg:flex">
         <div class="w-full flex">
           <div class="grid gap-5">
             <img
@@ -225,7 +225,7 @@ const webshops = [
             <!-- Variants -->
             <RadioGroup v-model="selected">
               <RadioGroupLabel class="sr-only"></RadioGroupLabel>
-              <div class="flex space-x-2 mb-8">
+              <div class="space-y-5 lg:flex lg:space-y-0 lg:space-x-2 mb-8">
                 <RadioGroupOption
                   as="template"
                   v-for="variant in variants"
@@ -240,7 +240,7 @@ const webshops = [
                         : '',
                       checked ? 'bg-teal-800 text-white ' : 'bg-white ',
                     ]"
-                    class="relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none"
+                    class="relative flex cursor-pointer rounded-lg px-3 py-3 lg:px-5 lg:py-4 shadow-md focus:outline-none"
                   >
                     <div class="flex w-full items-center justify-between">
                       <div class="flex items-center">
@@ -444,12 +444,12 @@ const webshops = [
               href="#"
               class="block group bg-white rounded-lg p-5 shadow-md hover:shadow-lg"
             >
-              <div class="flex justify-between items-center w-full">
+              <div class="lg:flex space-y-5 lg:space-y-0 justify-between items-center w-full">
                 <div class="flex space-x-5 items-center">
                   <figure class="w-40">
                     <img :src="webshop.logo" class="w-full scale-75" alt="" />
                   </figure>
-                  <p class="text-lg font-medium w-full">
+                  <p class="text-md lg:text-lg font-medium w-full">
                     {{ webshop.product }}
                   </p>
                 </div>
@@ -461,7 +461,7 @@ const webshops = [
                         class="material-symbols-outlined stock text-green-500"
                         >check_circle</span
                       >
-                      <span>In stock</span>
+                      <span class="text-sm lg:text-base">In stock</span>
                     </div>
 
                     <div v-else class="flex space-x-2">
@@ -473,7 +473,7 @@ const webshops = [
                   </div>
 
                   <div class="w-32 text-right">
-                    <p class="text-lg font-semibold">{{ webshop.price }} kr.</p>
+                    <p class="text-sm lg:text-lg font-semibold">{{ webshop.price }} kr.</p>
 
                     <p class="text-sm font-medium text-gray-400">
                       {{ webshop.fragt }} delivery
@@ -489,7 +489,7 @@ const webshops = [
                     class="inline-flex items-center pl-4 pr-2 py-3 text-sm font-medium "
                     target="_blank"
                     >
-                      <span>Visit Site</span>  
+                      <span class="text-xs">Visit Site</span>  
                       <span class="material-symbols-outlined">
                         keyboard_arrow_right
                       </span>

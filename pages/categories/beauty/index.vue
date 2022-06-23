@@ -156,7 +156,7 @@ const products = [
     <div>
       <div class="w-10/12 mx-auto p-5">
         <div
-          class="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0"
+          class="px-4 flex items-center justify-between"
         >
           <h2 class="font-semibold text-2xl mb-4">Beauty</h2>
           <!-- <a
@@ -169,14 +169,14 @@ const products = [
 
               <!-- Grid start -->
               <div
-                class="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-8 bg-gray-50"
+                class="px-4 flex flex-col space-y-8 lg:space-x-8 lg:grid lg:grid-cols-3 lg:space-y-0 bg-gray-50"
               >
                 <div v-for="category in categories" :key="category.name" class="">
                   <a
                     :key="category.name"
                   href="/categories/beauty/perfume"
                     
-                    class="relative w-56 h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
+                    class="relative w-full h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
                   >
                     <span aria-hidden="true" class="absolute inset-0">
                       <img
@@ -205,11 +205,11 @@ const products = [
                     </li>
 
                     <li v-for="subcategory in category.subcategories">
-                      <a href="">
+                      <nuxt-link to="/categories/beauty/perfume">
                         <span class="text-sm hover:font-semibold">
                           {{ subcategory.name }}
                         </span>
-                      </a>
+                      </nuxt-link>
                     </li>
                   </ul>
                 </div>
@@ -218,7 +218,7 @@ const products = [
               <!-- Popular products -->
               <div class="w-full mt-12 border-t py-10 ">
                 <h2 class="font-semibold text-2xl mb-4">Popular beauty products</h2>
-                <div class="grid grid-cols-4 gap-5">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
                   <div v-for="product in products" :key="product.name">
                   <div class="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl px-5 py-3 border bg-white">
                     <nuxt-link

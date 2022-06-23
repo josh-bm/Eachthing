@@ -39,10 +39,10 @@ const articles = [
   <div>
     <Navbar />
 
-    <div class="w-10/12 mx-auto py-5 space-y-5">
+    <div class="lg:w-10/12 mx-auto py-5 space-y-5">
       <section class="w-1/2 text-center w-full mx-auto space-y-5">
-        <p class="text-gray-400">Published January 13, 2021</p>
-        <h2 class="font-bold text-3xl mb-3">
+        <p class="text-gray-400 text-xs lg:text-base">Published January 13, 2021</p>
+        <h2 class="font-bold text-xl lg:text-3xl mb-3">
           5 ECO-FRIENDLY PRODUCTS TO HELP YOU LIVE A LITTLE GREENER IN 2022
         </h2>
         <p>
@@ -71,9 +71,9 @@ const articles = [
 
       <section class="w-2/3 mx-auto space-y-5 mt-5"  v-for="article in articles" :key="article.name">
         <nuxt-link to="/product">
-        <figure class="flex">
-          <img class="w-4/12" :src="article.imageUrl" alt="" />
-          <div class="px-5">
+        <figure class="lg:flex space-y-5 lg:space-y-0">
+          <img class="w-full lg:w-4/12" :src="article.imageUrl" alt="" />
+          <div class="lg:px-5">
              <h3 class="font-bold text-xl mb-3">{{ article.title }}</h3>
         <p>
           {{ article.description }}

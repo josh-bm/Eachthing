@@ -26,22 +26,7 @@ const filters = [
     name: "Category",
     options: [
       { value: "new-arrivals", label: "All New Arrivals" },
-      { value: "tees", label: "Tees" },
-      { value: "crewnecks", label: "Crewnecks" },
-      { value: "sweatshirts", label: "Sweatshirts" },
-      { value: "pants-shorts", label: "Pants & Shorts" },
-    ],
-  },
-  {
-    id: "sizes",
-    name: "Sizes",
-    options: [
-      { value: "xs", label: "XS" },
-      { value: "s", label: "S" },
-      { value: "m", label: "M" },
-      { value: "l", label: "L" },
-      { value: "xl", label: "XL" },
-      { value: "2xl", label: "2XL" },
+      { value: "eau-de-parfum", label: "Eau De Parfum" },
     ],
   },
 ];
@@ -367,7 +352,7 @@ const pages = [
                 </MenuItems>
               </Menu>
             </div>
-            <div class="grid grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
               <div v-for="product in products" :key="product.name">
                 <div
                   class="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl px-5 py-3 border"

@@ -154,21 +154,21 @@ const products = [
     <Navbar />
 
     <div>
-      <div class="w-10/12 mx-auto p-5">
-        <h2 class="font-semibold text-4xl mb-4 text-center">
+      <div class="w-10/12 mx-auto p-5 ">
+        <h2 class="font-semibold text-4xl mb-12 lg:mb-4 text-center">
           Search results for "Bodywash"
         </h2>
 
         <h2 class="font-semibold text-2xl mb-4">Categories</h2>
 
         <div
-          class="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-6 xl:gap-8"
+          class="grid grid-cols-1 lg:grid-cols-4 space-y-8 lg:space-x-8 lg:space-y-0"
         >
           <a
             v-for="category in categories"
             :key="category.name"
             href="/categories/beauty"
-            class="relative w-22 h-40 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
+            class="relative w-full h-40 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
           >
             <span aria-hidden="true" class="absolute inset-0">
               <img
@@ -191,7 +191,7 @@ const products = [
         <!-- Popular products -->
         <div class="w-full mt-12 border-t py-10">
           <h2 class="font-semibold text-2xl mb-4">Products (21)</h2>
-          <div class="grid grid-cols-4 gap-5">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
             <div v-for="product in products" :key="product.name">
               <div
                 class="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl px-5 py-3 border bg-white"

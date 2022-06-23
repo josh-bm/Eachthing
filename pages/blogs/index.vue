@@ -84,7 +84,7 @@ const posts = [
         <div
           v-for="feature in features"
           :key="feature.name"
-          class="rounded-lg shadow-lg flex cursor-pointer hover:shadow-xl"
+          class="rounded-lg shadow-lg lg:flex cursor-pointer hover:shadow-xl"
         >
           <img
             class="h-80 w-full object-cover rounded-l-lg shadow-l-lg"
@@ -119,7 +119,7 @@ const posts = [
         </nuxt-link>
       </div>
 
-      <div class="mt-12 mx-auto grid gap-10 grid-cols-3">
+      <div class="mt-12 mx-auto grid grid-cols-1 gap-10 lg:grid-cols-3">
         <div
           v-for="post in posts"
           :key="post.title"
