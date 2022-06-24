@@ -1,29 +1,28 @@
 <script setup>
-import { ref } from 'vue'
-
-
-
+import { ref } from "vue";
 
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  TransitionChild,
+  TransitionRoot,
 } from "@headlessui/vue";
 
 const navigation = [
   { name: "Categories", href: "/categories" },
-  { name: "Guides", href: "/guides" },
-  { name: "About", href: "#" },
+  { name: "Guides", href: "/blogs" },
 ];
 
-const up = ref(false)
-
+const up = ref(false);
 </script>
 
 <template>
   <div class="w-10/12 py-5 mx-auto">
-        <TransitionRoot as="template" :show="up">
+    <TransitionRoot as="template" :show="up">
       <Dialog as="div" class="relative z-10" @close="up = false">
         <TransitionChild
           as="template"
@@ -80,10 +79,10 @@ const up = ref(false)
                   <h2
                     class="mt-6 text-center text-2xl font-extrabold text-gray-900"
                   >
-                   Personalize your experience
+                    Personalize your experience
                   </h2>
                   <p class="mb-5 text-center text-sm text-gray-600">
-                 Log in to your Eachthing account.
+                    Log in to your Eachthing account.
                   </p>
 
                   <form class="space-y-6" action="#" method="POST">
@@ -271,9 +270,7 @@ const up = ref(false)
               :key="item.name"
               :href="item.href"
               :class="[
-                item.current
-                  ? ''
-                  : ' hover:text-teal-800',
+                item.current ? '' : ' hover:text-teal-800',
                 'px-3 py-2 rounded-md text-lg font-medium',
               ]"
               :aria-current="item.current ? 'page' : undefined"
@@ -281,9 +278,8 @@ const up = ref(false)
             >
           </div>
 
-
-            <div class="w-7/12">
-              <nuxt-link to="/search">
+          <div class="w-7/12">
+            <form action="/search">
               <label for="search" class="sr-only">Search</label>
               <div class="relative">
                 <div
@@ -291,6 +287,7 @@ const up = ref(false)
                 >
                   <span class="material-symbols-outlined"> search </span>
                 </div>
+
                 <input
                   id="search"
                   name="search"
@@ -299,9 +296,8 @@ const up = ref(false)
                   type="search"
                 />
               </div>
-              </nuxt-link>
-            </div>
-         
+            </form>
+          </div>
 
           <div class="flex items-center space-x-5">
             <nuxt-link

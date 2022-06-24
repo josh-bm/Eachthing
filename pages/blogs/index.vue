@@ -134,7 +134,7 @@ const posts = [
                 <p class="text-xl font-semibold text-gray-900">
                   {{ post.title }}
                 </p>
-                <p class="mt-3 text-base text-gray-500">
+                <p class="mt-3 text-base text-gray-500 truncate">
                   {{ post.description }}
                 </p>
               </a>

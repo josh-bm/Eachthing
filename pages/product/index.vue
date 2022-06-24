@@ -185,22 +185,22 @@ const webshops = [
       </nav>
       <!-- Product start -->
       <div class="lg:flex">
-        <div class="w-full flex">
-          <div class="grid gap-5">
+        <div class="lg:w-1/2">
+          <img
+            class="w-full h-96 object-contain cursor-pointer"
+            src="/bodywash.png"
+            alt=""
+          />
+
+         <div class="grid grid-cols-4 gap-5">
             <img
               class="w-full bg-gray-100 border border-gray-300 shadow-lg rounded-lg hover:shadow-xl cursor-pointer"
               src="/bodywash.png"
               alt=""
             />
           </div>
-
-          <img
-            class="w-9/12 scale-75 cursor-pointer"
-            src="/bodywash.png"
-            alt=""
-          />
         </div>
-        <div class="w-full p-5">
+        <div class="lg:w-1/2 py-5 lg:py-0">
           <p>Nordic EcoClean</p>
           <h2 class="text-2xl mb-1 font-semibold">Eco Care Bodywash</h2>
           <div class="mb-5 flex items-center">
@@ -436,8 +436,8 @@ const webshops = [
     </div>
 
     <!-- Webshop start -->
-    <div class="bg-gray-50">
-      <div class="w-10/12 mx-auto px-5 pt-10 pb-5">
+    <div class="">
+      <div class="w-10/12 mx-auto px-5 pb-5">
         <ul role="list" class="grid grid-cols-1 gap-6">
           <li v-for="webshop in webshops" :key="webshop.id">
             <a

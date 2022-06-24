@@ -81,7 +81,7 @@ const categories = [
         </div>
 
         <div
-          class="px-4 grid gap-5 grid-cols-1 lg:grid-cols-4 lg:space-x-8 lg:px-8"
+          class="grid gap-5 grid-cols-1 lg:grid-cols-4"
         >
           <a
             v-for="category in categories"

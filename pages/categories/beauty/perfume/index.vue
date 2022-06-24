@@ -361,7 +361,7 @@ const pages = [
                     <div class="relative w-full">
                       <figure class="w-8/12 mx-auto">
                         <img
-                          class="w-full h-72 scale-90 hover:scale-100 object-cover"
+                          class="w-full h-72 scale-90 duration-500 hover:scale-100 object-cover"
                           :src="product.imageSrc"
                           alt=""
                         />

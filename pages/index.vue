@@ -243,7 +243,7 @@ const blogs = [
               <div class="relative w-full">
                 <figure class="w-full mx-auto">
                   <img
-                    class="w-full h-80 scale-75 hover:scale-90 object-cover"
+                    class="w-full h-80 scale-75 duration-500 hover:scale-90 object-cover"
                     :src="recentproduct.imageSrc"
                     alt=""
                   />
@@ -325,7 +325,7 @@ const blogs = [
               <div class="relative w-full">
                 <figure class="w-full mx-auto">
                   <img
-                    class="w-full h-80 scale-75 hover:scale-90 object-cover"
+                    class="w-full h-80 scale-75 duration-500 hover:scale-90 object-cover"
                     :src="popularproduct.imageSrc"
                     alt=""
                   />
