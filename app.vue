@@ -1,6 +1,15 @@
-<script setup lang="ts">
+<script setup>
 import '@/assets/css/tailwind.css'
 import "/app.css"
+
+useHead({
+  title: 'Eachthing',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  charset: 'utf-8',
+  meta: [
+    { name: 'description', content: 'Eachthing is a price comparison website that focuses on transparency and working with brands that have certifications in regards to sustainability and eco-friendliness.' }
+  ],
+})
 
 </script>
 
