@@ -313,7 +313,7 @@ const up = ref(false)
         </div>
       </div>
 
-      <DisclosurePanel class="lg:hidden shadow-lg rounded-lg">
+      <DisclosurePanel class="lg:hidden">
         <div class="pt-2 pb-3 space-y-1">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
           <DisclosureButton
