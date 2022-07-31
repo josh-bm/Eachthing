@@ -1,43 +1,38 @@
-Meta tags
-Upload to domain
+Must haves:
+- Labels and certifications
+- Retailers page
+- Make images smaller so they load faster
 
+Should haves:
+Product page
+- "Write a review" modal
 
-Home page:
-- Make eco score, price, and tags unique for all products
+Sign up + login
+- make a signup page
 
-Product page:
-- Make unique reviews
-
-Searchbar:
-- make it so that it searches on enter key and not on click
-
-Category search page:
-- Add unique filters related to the products
-
-Missing pages:
-Labels and certifications + nice to haves
-
-Retailers page
-
-About page
-
-Nice to haves:
-Hashtags
-Recipes
+- Hashtags
+- Recipes
+- About page
 
 Search page:
 - Page for no search results (tailwindui)
 - Search page filter in mobile
 	- Make it onclick dropdown
 
-Price tracking function
-
+Nice to haves
+- Meta tags
 - Add alt tags for all images
 - Consider Aria and other stuff
 
-Product page
-- Write a review modal
+Could haves:
+- Price tracking function
 
+Dynamic changes:
+Home page:
+- Make eco score, price, and tags unique for all products
 
-Sign up + login
-- make a signup page
+Product page:
+- Make unique reviews
+
+Category search page:
+- Add unique filters related to the products
