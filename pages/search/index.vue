@@ -83,7 +83,7 @@ const categories = [
 const products = [
   {
     brand: "Clean Reserve",
-    name: "Avant Garden Galbanum & Rain",
+    name: "Avant Garden Galbanum",
     category: "Eau De Parfum",
     href: "#",
     imageSrc: "/cleanreserve.jpg",
@@ -93,9 +93,6 @@ const products = [
     tags: [
       {
         name: "SustainablePackaging",
-      },
-      {
-        name: "EthicalHarvesting",
       },
     ],
   },

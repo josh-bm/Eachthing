@@ -13,8 +13,8 @@ Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot
 
 const navigation = [
   { name: "Categories", href: "/categories" },
-  { name: "Guides", href: "/guides" },
-  { name: "About", href: "#" },
+  { name: "Guides", href: "/blogs" },
+
 ];
 
 const up = ref(false)

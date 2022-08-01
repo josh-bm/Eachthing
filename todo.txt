@@ -36,3 +36,6 @@ Product page:
 
 Category search page:
 - Add unique filters related to the products
+
+Make product card into a component
+- Fix height issue

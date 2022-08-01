@@ -20,7 +20,7 @@ const recentproducts = [
   },
   {
     brand: "Clean Reserve",
-    name: "Avant Garden Galbanum & Rain",
+    name: "Avant Garden Galbanum",
     category: "Eau De Parfum",
     href: "#",
     imageSrc: "/cleanreserve.jpg",
@@ -48,6 +48,9 @@ const recentproducts = [
     tags: [
       {
         name: "SustainablePackaging",
+      },
+      {
+        name: "EthicalHarvesting",
       },
     ],
   },
@@ -56,7 +59,7 @@ const recentproducts = [
 const popularproducts = [
   {
     brand: "Clean Reserve",
-    name: "Avant Garden Galbanum & Rain",
+    name: "Avant Garden Galbanum",
     category: "Eau De Parfum",
     href: "#",
     imageSrc: "/cleanreserve.jpg",
@@ -84,6 +87,9 @@ const popularproducts = [
     tags: [
       {
         name: "SustainablePackaging",
+      },
+      {
+        name: "EthicalHarvesting",
       },
     ],
   },
@@ -139,11 +145,14 @@ const seasonalproducts = [
       {
         name: "SustainablePackaging",
       },
+      {
+        name: "EthicalHarvesting",
+      },
     ],
   },
   {
     brand: "Vetta",
-    name: "The Two Piece Utility Jumpsuit",
+    name: "Two Piece Utility Jumpsuit",
     category: "Jumpsuits",
     href: "#",
     imageSrc: "/vetta.jpg",
@@ -154,11 +163,14 @@ const seasonalproducts = [
       {
         name: "SustainablePackaging",
       },
+      {
+        name: "EthicalHarvesting",
+      },
     ],
   },
   {
     brand: "Quince",
-    name: "European Linen Short Sleeve Shirt",
+    name: "European Linen Shirt",
     category: "Shirts",
     href: "#",
     imageSrc: "/quince.jpg",
@@ -168,6 +180,9 @@ const seasonalproducts = [
     tags: [
       {
         name: "SustainablePackaging",
+      },
+      {
+        name: "EthicalHarvesting",
       },
     ],
   },
