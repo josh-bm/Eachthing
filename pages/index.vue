@@ -220,6 +220,7 @@ const blogs = [
 
 <template>
   <div>
+    
  <HomeNav/>
         
     <!-- Search bar -->

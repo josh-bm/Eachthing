@@ -22,7 +22,7 @@ const up = ref(false)
 </script>
 
 <template>
-  <div class="w-full sticky top-0 z-10 bg-white shadow">
+  <div class="w-full sticky top-0 z-10 bg-white shadow-xs">
     <div class="w-10/12 py-5 mx-auto">
         <TransitionRoot as="template" :show="up">
       <Dialog as="div" class="relative z-10" @close="up = false">
